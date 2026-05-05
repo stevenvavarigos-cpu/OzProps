@@ -672,12 +672,12 @@ const ODDS_API_BASE = 'https://api.the-odds-api.com/v4';
 // Set this to your deployed backend URL so users get live odds automatically.
 // e.g. 'https://ozprops-backend.up.railway.app'
 // Leave empty ('') to use direct API key mode (user must enter key manually).
-const BACKEND_URL = 'http://localhost:8788';
+const BACKEND_URL = '';
 const MANAGED_MODE = !!BACKEND_URL; // users consume your backend, not their own keys
 const PREMIUM_PRICE_MONTHLY = 35;
 const PREMIUM_CHECKOUT_URL = ''; // optional fallback URL if backend checkout endpoint is unavailable
 const CREATOR_FULL_ACCESS = false; // set true only for local dev override
-const CREATOR_CAN_TOGGLE = true; // private creator switch to test free vs premium UX
+const CREATOR_CAN_TOGGLE = false; // disable creator toggle for public users
 const FORCE_PREMIUM_OFF = false; // keep false when using creator toggle
 
 // Map our sport keys -> The Odds API sport keys + region
